@@ -1,3 +1,5 @@
+// `sql.js` is a node module
+
 const { createConnection } = require('mysql2/promise');
 
 let connection = null;
