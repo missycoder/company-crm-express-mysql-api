@@ -7,10 +7,10 @@ require('dotenv').config();
 
 const app = express();
 
-// RESTFUL API
-app.use(cors()); // enable cross origin resources sharing
-app.use(express.json()); // enable sending back responses as JSON
-                         // and receiving data as JSON
+// RESTFUL API accepts sending back responses & receiving data as JSON
+app.use(cors()); // make RESTful API public
+app.use(express.json());
+                        
 
 async function main() {
 
@@ -31,12 +31,6 @@ async function main() {
     });
 
     app.post('/api/customers', async function(req,res){
-        // We can use object destructuring to quickly do the following:
-        // const first_name = req.body.first_name;
-        // const last_name = req.body.last_name;
-        // const rating = req.body.rating;
-        // const company_id = req.body.company_id;
-
         // Object Destructuring
         const { first_name, last_name, rating, company_id, employees} = req.body;
         const results = await customerServices.addNewCustomer(first_name, last_name, rating, company_id, employees)
