@@ -24,6 +24,11 @@ This is a Customer Relationship Management (CRM) application for managing compan
 
 ![MySQL Customers](https://github.com/missycoder/SCTP02-05-express-mysql-api/assets/156276105/58cd6475-546d-4be4-b07c-12e9d214a27e)
 
+# ER Diagram
+<img width="989" alt="crm_er_diagram" src="https://github.com/missycoder/MySQL-Customer-Relationship-Management/assets/156276105/80c20378-7c2c-4b63-97b3-d6f18795b4aa">
+
+# CRM Diagram
+![crm_diagram](https://github.com/missycoder/MySQL-Customer-Relationship-Management/assets/156276105/2ae1634a-90bd-4b90-9cce-19ac8e77d2cb)
 
 ## Installation
 
